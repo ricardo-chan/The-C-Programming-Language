@@ -1,2 +1,4 @@
 # The-C-Programming-Language
-Own solutions to exercises from K&amp;R 2ed book
+
+Reading The C Programming Language 2nd Edition. Exercises are organized in
+folders by chapter.
