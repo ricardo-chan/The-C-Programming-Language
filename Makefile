@@ -1,21 +1,8 @@
 CC = gcc
 CFLAGS = -Wall -Wpedantic -Werror
 
-BINS = Ch1/Ch1Ex01_HelloWorld.out \
-	   Ch1/Ch1Ex02_HelloWorld.out \
-	   Ch1/Ch1Ex03_TemperatureConversion.out \
-	   Ch1/Ch1Ex04_TemperatureConversion.out \
-	   Ch1/Ch1Ex05_ReverseTempConversion.out \
-	   Ch1/Ch1Ex06_GetCharEOF.out \
-	   Ch1/Ch1Ex07_PrintEOF.out \
-	   Ch1/Ch1Ex08_BlankTabsNewLines.out \
-	   Ch1/Ch1Ex09_ReplaceBlanks.out \
-	   Ch1/Ch1Ex10_PrintTabsBackslashBackspace.out \
-	   Ch1/Ch1Ex11_WordCountBugs.out \
-	   Ch1/Ch1Ex12_WordPerLine.out \
-	   Ch1/Ch1Ex13_WordHistogram.out \
-	   Ch1/Ch1Ex14_CharHistogram.out \
-	   Ch1/Ch1Ex15_FunctionTempConversion.out
+SOURCES = $(wildcard Ch1/*.c)
+BINS = $(SOURCES:.c=.out)
 
 all: $(BINS)
 
