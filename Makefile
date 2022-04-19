@@ -51,6 +51,9 @@ Ch1/Ch1Ex14_CharHistogram.out: Ch1/Ch1Ex14_CharHistogram.o
 Ch1/Ch1Ex15_FunctionTempConversion.out: Ch1/Ch1Ex15_FunctionTempConversion.o
 	$(CC) $(CFLAGS) $< -o $@
 
+Ch1/Ch1Ex16_LongestLine.out: Ch1/Ch1Ex16_LongestLine.o
+	$(CC) $(CFLAGS) $< -o $@
+
 Ch1/%.o: Ch1/%.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
