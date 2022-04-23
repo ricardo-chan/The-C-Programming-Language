@@ -57,6 +57,9 @@ Ch1/Ch1Ex16_LongestLine.out: Ch1/Ch1Ex16_LongestLine.o
 Ch1/Ch1Ex17_LinesOver80.out: Ch1/Ch1Ex17_LinesOver80.o
 	$(CC) $(CFLAGS) $< -o $@
 
+Ch1/Ch1Ex18_RemoveBlanks.out: Ch1/Ch1Ex18_RemoveBlanks.o
+	$(CC) $(CFLAGS) $< -o $@
+
 Ch1/%.o: Ch1/%.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
